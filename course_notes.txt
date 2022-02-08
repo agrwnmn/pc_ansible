@@ -1,0 +1,4 @@
+Switches being used in this project: 
+    z-bnaae-fsw-901.emdeon.net - (10.165.2.141)
+    z-bnaae-fsw-902.emdeon.net - (10.165.2.142)
+    z-atlpc-asw-702.corporate.healthcareit.net - (10.120.176.9)
