@@ -1,4 +1,40 @@
+******************************************************************
 Switches being used in this project: 
     z-bnaae-fsw-901.emdeon.net - (10.165.2.141)
     z-bnaae-fsw-902.emdeon.net - (10.165.2.142)
     z-atlpc-asw-702.corporate.healthcareit.net - (10.120.176.9)
+******************************************************************
+
+
+What are Ansible Nodes and define them: 
+    * Control Node - Machine that has Ansible installed and executes automation against managed Nodes
+        - There can be more than one control node in the network.
+        - A device can be a control node and a host at the same time!!! 
+
+    * Managed Node - Managed host that Ansible executes against. (Often times called hosts)
+
+What is YAML? - Stands for "YAML Ain't Markup Language"
+    * Human Readable 
+    * Used by Ansible for Static inventory files and automation
+    * Represents data through key-value pairs
+
+Describe Ansible configuration files: Within the root Ansible folder, there is a "ANSIBL_CONFIG" file that will determine how Ansible will behave when used.
+    * Ansible config files can be used in the users HOME directory to allow customization to all Ansible run files without making any changes to the main file in the root directory.
+    
+    * Ansible config files can be moved to a specific directory to be called on for that local directory and used as needed for that project. 
+        - ansible.cfg file in the directory folder will informs Ansible how to run that particular directory
+    
+    * Each entry in the ansible.cfg file will have a key-value pair relationship
+
+Describe Ansible inventory files: Defines which hosts are going to be managed by Ansible and how they should be grouped
+    * Static inventory - hosts are defined by a file within the ansible project.
+
+    * Dynamic inventory - hosts are defined by 3rd party source outside of ansible.
+
+    * inventory file should be kept in your project directory so that the inventory file can be tracked by version control.
+
+    * ansible-inventory -i inventory.yaml --list (Command to breakdown your inventory structure in Ansible)
+
+Describe Ansible "Facts":
+
+What are Ansible Collections?
