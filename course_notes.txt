@@ -35,6 +35,8 @@ Describe Ansible inventory files: Defines which hosts are going to be managed by
 
     * ansible-inventory -i inventory.yaml --list (Command to breakdown your inventory structure in Ansible)
 
-Describe Ansible "Facts":
+Describe Ansible "Facts": Special device charachteristics that are identified by Ansible
 
-What are Ansible Collections?
+What are Ansible Collections? Distribution format for Ansible content. (Think of a package in GOLang or Python)
+
+What are ROLES in Ansible? A way to group together templates, playbooks and Ansible artifacts
