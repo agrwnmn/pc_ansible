@@ -1,0 +1,16 @@
+all:
+    hosts:
+    children:
+        switches:
+            hosts:
+                switch1:
+                switch2: 
+                switch3:
+        nashville:
+            hosts:
+                switch1:
+                switch2:
+        atlanta:
+            hosts:
+                switch3:
+    vars:   
