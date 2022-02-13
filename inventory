@@ -1,16 +1,19 @@
 all:
-    hosts:
     children:
         switches:
             hosts:
                 switch1:
+                    loopback: 10.165.2.141
                 switch2: 
+                    loopback: 10.165.2.142
                 switch3:
+                    loopback: 10.120.176.9
         nashville:
             hosts:
                 switch1:
                 switch2:
+            vars:
         atlanta:
             hosts:
                 switch3:
-    vars:   
+            vars:   
