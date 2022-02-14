@@ -3,11 +3,23 @@ all:
         switches:
             hosts:
                 switch1:
-                    loopback: 10.165.2.141
+                    ansible_host: 10.165.2.141
+                    ansible_user: automation-chc
+                    ansible_password: 11112222
+                    ansible_connection: ansible.netcommon.network_cli
+                    ansible_network_os: cisco.nxos.nxos
                 switch2: 
                     loopback: 10.165.2.142
+                    ansible_user: automation-chc
+                    ansible_password: 11112222
+                    ansible_connection: ansible.netcommon.network_cli
+                    ansible_network_os: cisco.nxos.nxos
                 switch3:
                     loopback: 10.120.176.9
+                    ansible_user: automation-chc
+                    ansible_password: 11112222
+                    ansible_connection: ansible.netcommon.network_cli
+                    ansible_network_os: cisco.nxos.nxos
         nashville:
             hosts:
                 switch1:
@@ -17,8 +29,8 @@ all:
             hosts:
                 switch3:
             vars:   
-    vars:
-        ansible_connection: ansible.netcommon.network_cli
-        ansible_network_os: cisco.nxos.nxos
-        ansible_user: automation-chc
-        ansible_password: 11112222
+#    vars:
+#        ansible_connection: ansible.netcommon.network_cli
+#        ansible_network_os: cisco.nxos.nxos
+#        ansible_user: automation-chc
+#        ansible_password: 11112222
